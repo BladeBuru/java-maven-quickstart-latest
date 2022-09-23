@@ -3,10 +3,10 @@ package fr.pantheonsorbonne.cri;
 import java.util.Random;
 
 public class Card {
-    private Valeur valeur;
-    private Couleur couleur;
+    private Value value;
+    private Color color;
 
-    enum Couleur {
+    enum Color {
         SPADES,
         HEARTS,
         DIAMONDS,
@@ -14,13 +14,13 @@ public class Card {
 
         private static Random rand = new Random();
 
-        public static Couleur drawRandom() {
+        public static Color drawRandom() {
 
-            return (Couleur) (Couleur.class.getEnumConstants()[rand.nextInt(Couleur.class.getEnumConstants().length)]);
+            return (Color) (Color.class.getEnumConstants()[rand.nextInt(Color.class.getEnumConstants().length)]);
         }
     }
 
-    enum Valeur {
+    enum Value {
         ACE,
         KING,
         QUEEN,
@@ -38,26 +38,34 @@ public class Card {
 
         private static Random rand = new Random();
 
-        public static Valeur drawRandom() {
+        public static Value drawRandom() {
 
-            return (Valeur) (Valeur.class.getEnumConstants()[rand.nextInt(Valeur.class.getEnumConstants().length)]);
+            return (Value) (Value.class.getEnumConstants()[rand.nextInt(Value.class.getEnumConstants().length)]);
         }
 
     }
 
     public Card() {
-        this(Valeur.drawRandom(), Couleur.drawRandom());
+        this(Value.drawRandom(), Color.drawRandom());
     }
 
-    public Card(Valeur valeur, Couleur couleur) {
-        this.valeur = valeur;
-        this.couleur = couleur;
+    public Card(Value value, Color color) {
+        this.value = value;
+        this.color = color;
     }
 
+    public static boolean SameColor(Card card,Card card1){
 
+        return (card1.color == card.color);
+    }
+    
+    public static boolean SameValue(Card card,Card card1){
+
+        return (card1.value == card.value);
+    }
     public String toString(){
 
-        return valeur + " " + couleur + "\n" ;
+        return value + " " + color + "\n" ;
     }
 }
 
