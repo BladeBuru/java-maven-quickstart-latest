@@ -13,7 +13,7 @@ public class Player {
     }
 
     public boolean beats(Player player1){
-
+        
         return;
     }
 }
