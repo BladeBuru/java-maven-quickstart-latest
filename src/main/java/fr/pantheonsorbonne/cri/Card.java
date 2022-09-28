@@ -1,5 +1,4 @@
 package fr.pantheonsorbonne.cri;
-
 import java.util.Random;
 
 public class Card {

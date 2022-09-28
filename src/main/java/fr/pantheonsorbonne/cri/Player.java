@@ -1,19 +1,34 @@
 package fr.pantheonsorbonne.cri;
 
+import java.util.ArrayList;
+
 public class Player {
     private String name;
-    private Card[] cards;
+    ArrayList<Card> cards;
 
-    public Player(String name){
+    public Player(String name) {
         this.name = name;
     }
 
-    public void setHand(Card[] cards){
+    public void setHand(ArrayList<Card> cards) {
         this.cards = cards;
     }
 
-    public boolean beats(Player player1){
-        
-        return;
+    public boolean beats(Player player1) {
+        //
+        //
+        //
+        return false;
+
+    }
+
+
+    public String toString(){
+        ArrayList<String> string = new ArrayList<String>();
+
+        for (Card card : cards) {
+            string.add(card.toString() );
+        }
+        return "" + string;
     }
 }

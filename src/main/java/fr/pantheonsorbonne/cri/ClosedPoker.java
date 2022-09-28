@@ -7,9 +7,10 @@ public class ClosedPoker {
         Player p3 = new Player("Flavio");
 
         //give the players some cards
-        p1.setHand(Deck.newRandomHand());
-        p2.setHand(Deck.newRandomHand());
-        p3.setHand(Deck.newRandomHand());
+        Deck deck = new Deck();
+        p1.setHand(deck.newRandomHand());
+        p2.setHand(deck.newRandomHand());
+        p3.setHand(deck.newRandomHand());
 
         //returns the cards the players want to discard and get new ones
         Cards[] cardsP1=p1.getCardsToDiscard();
