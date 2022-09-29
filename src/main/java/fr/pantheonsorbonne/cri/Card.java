@@ -1,4 +1,5 @@
 package fr.pantheonsorbonne.cri;
+
 import java.util.Random;
 
 public class Card {
@@ -32,8 +33,7 @@ public class Card {
         FIVE,
         FOUR,
         THREE,
-        TWO,
-        ONE;
+        TWO;
 
         private static Random rand = new Random();
 
@@ -53,19 +53,18 @@ public class Card {
         this.color = color;
     }
 
-    public static boolean SameColor(Card card,Card card1){
+    public static boolean SameColor(Card card, Card card1) {
 
         return (card1.color == card.color);
     }
-    
-    public static boolean SameValue(Card card,Card card1){
+
+    public static boolean SameValue(Card card, Card card1) {
 
         return (card1.value == card.value);
     }
-    public String toString(){
 
-        return value + " " + color + "\n" ;
+    public String toString() {
+
+        return value + " " + color + "\n";
     }
 }
-
-

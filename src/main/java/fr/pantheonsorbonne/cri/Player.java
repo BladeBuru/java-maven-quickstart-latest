@@ -8,6 +8,7 @@ public class Player {
 
     public Player(String name) {
         this.name = name;
+        cards = new Deck();
     }
 
     public void setHand(Deck cards) {
@@ -21,10 +22,21 @@ public class Player {
         return false;
 
     }
+    public Deck getCardsToDiscard(){
 
 
-    public String toString(){
-       
+    }
+
+    public Deck getDeck() {
+        return cards;
+    }
+
+    public String toString() {
+
+        return name + "   " + cards.toString();
+    }
+    public String toHandString() {
+
         return cards.toString();
     }
 }
