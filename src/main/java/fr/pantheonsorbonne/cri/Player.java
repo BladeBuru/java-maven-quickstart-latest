@@ -4,13 +4,13 @@ import java.util.ArrayList;
 
 public class Player {
     private String name;
-    ArrayList<Card> cards;
+    Deck cards;
 
     public Player(String name) {
         this.name = name;
     }
 
-    public void setHand(ArrayList<Card> cards) {
+    public void setHand(Deck cards) {
         this.cards = cards;
     }
 
@@ -24,11 +24,7 @@ public class Player {
 
 
     public String toString(){
-        ArrayList<String> string = new ArrayList<String>();
-
-        for (Card card : cards) {
-            string.add(card.toString() );
-        }
-        return "" + string;
+       
+        return cards.toString();
     }
 }
