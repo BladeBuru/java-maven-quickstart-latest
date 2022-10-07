@@ -4,16 +4,16 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class Deck {
-    private ArrayList<Card> Cards;
+    private ArrayList<Card> cards;
     private Random random = new Random();
-    
-    public Deck(ArrayList<Card> deck) {
 
-        this.Cards = deck;
+    public Deck(ArrayList<Card> cards) {
+
+        this.cards = cards;
     }
 
     public Deck() {
-        Cards = new ArrayList<Card>();
+        cards = new ArrayList<Card>();
 
     }
 
@@ -24,46 +24,61 @@ public class Deck {
                 cards.add(new Card(value, color));
             }
         }
-        this.Cards = cards;
+        this.cards = cards;
     }
 
     public Deck newRandomHand() {
         Deck cards = new Deck();
-        for (int i = 0; i < 5 && this.Cards.size() >= 1; i++) {
-            int nextIndex = random.nextInt(Cards.size());
-            cards.ajout(this.Cards.get(nextIndex));
-            this.Cards.remove(nextIndex);
+        for (int i = 0; i < 5 && this.cards.size() >= 1; i++) {
+            int nextIndex = random.nextInt(this.cards.size());
+            cards.ajout(this.cards.get(nextIndex));
+            this.cards.remove(nextIndex);
         }
 
         return cards;
     }
 
     public void ajout(Card card) {
-        this.Cards.add(card);
+        this.cards.add(card);
 
     }
 
     public int size() {
 
-        return Cards.size();
+        return cards.size();
     }
 
     public String toString() {
         ArrayList<String> string = new ArrayList<String>();
 
-        for (Card card : Cards) {
+        for (Card card : cards) {
             string.add(card.toString());
         }
         return "" + string;
     }
 
+    public Deck getRandomCards(int length) {
+        Deck cards = new Deck();
+        for (int i = 0; i < length && this.cards.size() >= 1; i++) {
+            int nextIndex = random.nextInt(this.cards.size());
+            cards.ajout(this.cards.get(nextIndex));
+            this.cards.remove(nextIndex);
+        }
+        return cards;
+
+    }
+
+    public ArrayList<Card> getCard() {
+        return this.cards;
+    }
+
 }
 
 /*
-
-for (int i = 0; i < 5 && this.Cards.size() >= 1; i++) {
-            int random = new Random().nextInt(Cards.size());
-            cards.ajout(this.Cards.get(random));
-            this.Cards.remove(random);
-        }
-*/
+ * 
+ * for (int i = 0; i < 5 && this.Cards.size() >= 1; i++) {
+ * int random = new Random().nextInt(Cards.size());
+ * cards.ajout(this.Cards.get(random));
+ * this.Cards.remove(random);
+ * }
+ */

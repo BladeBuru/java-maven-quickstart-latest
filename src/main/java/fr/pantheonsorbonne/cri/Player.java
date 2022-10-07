@@ -24,7 +24,10 @@ public class Player {
     }
     public Deck getCardsToDiscard(){
 
-
+        //
+        //
+        //
+        return null;
     }
 
     public Deck getDeck() {
@@ -38,5 +41,11 @@ public class Player {
     public String toHandString() {
 
         return cards.toString();
+    }
+
+    public void addCard(Deck deck) {
+        for (Card card : deck.getCard()) {
+            this.cards.ajout(card);            
+        }
     }
 }

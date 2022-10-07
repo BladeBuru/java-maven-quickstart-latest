@@ -15,13 +15,13 @@ public class ClosedPoker {
 
         // returns the cards the players want to discard and get new ones
         Card[] cardsP1 = p1.getCardsToDiscard();
-        p1.addCard(Deck.getRandomCards(cardsP1.length));
+        p1.addCard(deck.getRandomCards(cardsP1.length));
 
         Card[] cardsP2 = p2.getCardsToDiscard();
-        p2.addCard(Deck.getRandomCards(cardsP2.length));
+        p2.addCard(deck.getRandomCards(cardsP2.length));
 
         Card[] cardsP3 = p3.getCardsToDiscard();
-        p3.addCard(Deck.getRandomCards(cardsP3.length));
+        p3.addCard(deck.getRandomCards(cardsP3.length));
 
         // check who wins
         if (p1.beats(p2) && p1.beats(p3)) {

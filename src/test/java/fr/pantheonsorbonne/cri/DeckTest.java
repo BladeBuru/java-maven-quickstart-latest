@@ -14,4 +14,14 @@ public class DeckTest {
         p1.setHand(deck.newRandomHand());
         assertNotEquals(52, deck.size());
     }
+
+    @Test
+    public void getRandomCardsTest() {
+        Deck deck = new Deck();
+        deck.Initialisation52Cards();
+        Deck deck2 = deck.getRandomCards(6);
+        assertEquals(6, deck2.size());
+
+      
+    }
 }
