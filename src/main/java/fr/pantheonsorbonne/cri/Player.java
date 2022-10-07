@@ -38,7 +38,7 @@ public class Player {
 
         return name + "   " + cards.toString();
     }
-    public String toHandString() {
+    public String getHandString() {
 
         return cards.toString();
     }
@@ -48,4 +48,6 @@ public class Player {
             this.cards.ajout(card);            
         }
     }
+
+   
 }
