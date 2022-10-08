@@ -68,6 +68,18 @@ public class Deck {
 
     }
 
+    public void sortCard() {
+
+    }
+
+    public int[] occurenceTable() {
+        int[] occurence;
+
+        //
+        //
+        return occurence;
+    }
+
     public ArrayList<Card> getCard() {
         return this.cards;
     }

@@ -22,8 +22,11 @@ public class Player {
         return false;
 
     }
-    public Deck getCardsToDiscard(){
 
+    public Deck getCardsToDiscard() {
+        Deck cardsToDiscard = new Deck();
+
+        
         //
         //
         //
@@ -38,6 +41,7 @@ public class Player {
 
         return name + "   " + cards.toString();
     }
+
     public String getHandString() {
 
         return cards.toString();
@@ -45,9 +49,8 @@ public class Player {
 
     public void addCard(Deck deck) {
         for (Card card : deck.getCard()) {
-            this.cards.ajout(card);            
+            this.cards.ajout(card);
         }
     }
 
-   
 }
