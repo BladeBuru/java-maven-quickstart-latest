@@ -73,10 +73,13 @@ public class Deck {
     }
 
     public int[] occurenceTable() {
-        int[] occurence;
-
-        //
-        //
+        int[] occurence = {1,1,1,1,1} ;
+        for (int i = 0; i <this.cards.size() ; i++) {
+            for (int j = i+1; j < this.cards.size(); j++) {
+                if (this.cards.get(i).SameValue(this.cards.get(j)))
+                occurence[i] = occurence[i]+1;
+            }
+        }
         return occurence;
     }
 

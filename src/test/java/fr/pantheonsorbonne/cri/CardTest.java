@@ -12,7 +12,7 @@ public class CardTest {
         Card card1 = new Card(Card.Value.FIVE, Card.Color.CLUBS);
         Card card2 = new Card(Card.Value.ACE, Card.Color.CLUBS);
 
-        assertTrue(Card.SameColor(card1, card2));
+        assertTrue(card1.SameColor( card2));
 
     }
 
@@ -24,9 +24,12 @@ public class CardTest {
         Card card2 = new Card(Card.Value.ACE, Card.Color.CLUBS);
         Card card3 = new Card(Card.Value.NINE, Card.Color.HEARTS);
 
-        assertTrue(Card.SameValue(card1, card2));
-        assertFalse(Card.SameValue(card1, card3));
+        assertTrue(card1.SameValue( card2));
+        assertFalse(card1.SameValue( card3));
 
     }
+
+
+
 
 }

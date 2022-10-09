@@ -53,14 +53,14 @@ public class Card {
         this.color = color;
     }
 
-    public static boolean SameColor(Card card, Card card1) {
+    public boolean SameColor(Card card) {
 
-        return (card1.color == card.color);
+        return (this.color == card.color);
     }
 
-    public static boolean SameValue(Card card, Card card1) {
+    public boolean SameValue(Card card) {
 
-        return (card1.value == card.value);
+        return (this.value == card.value);
     }
 
     public String toString() {
