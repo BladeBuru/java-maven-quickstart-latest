@@ -16,21 +16,15 @@ public class Player {
     }
 
     public boolean beats(Player player1) {
-        //
-        //
-        //
-        return false;
+        int HandOccurenceJ0 = cards.occurenceMax();
+        int HandOccurenceJ1 = player1.getDeck().occurenceMax();
+        return HandOccurenceJ0 > HandOccurenceJ1 ;
 
     }
 
     public Deck getCardsToDiscard() {
-        Deck cardsToDiscard = new Deck();
-
-        
-        //
-        //
-        //
-        return null;
+       
+        return cards.discarDeck();
     }
 
     public Deck getDeck() {

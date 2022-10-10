@@ -97,7 +97,7 @@ public class Deck {
 
     }
 
-    public int numberDicardCard() {
+    public int occurenceMax() {
         int[] occurence = occurenceTable();
         int occurencemax = 0;
         for (int i : occurence) {
@@ -105,10 +105,10 @@ public class Deck {
                 occurencemax = i;
         }
 
-        return 5 - occurencemax;
+        return  occurencemax;
     }
 
-    public Card.Value cardToKeep() {
+    private Card.Value cardToKeep() {
         int[] occurence = occurenceTable();
         int indexOccurencemax = 0;
         int occurencemax = 0;
@@ -123,7 +123,7 @@ public class Deck {
 
     public Deck discarDeck() {
         Deck deck = new Deck();
-        int numberDicardCard = numberDicardCard();
+        int numberDicardCard = 5 - occurenceMax();
         Card.Value cardToKeep = cardToKeep();
         int compterCardDiscard = 0;
         for (int i = 0; i < cards.size() && numberDicardCard > compterCardDiscard; i++) {
@@ -146,7 +146,6 @@ public class Deck {
                     occurence[i] = occurence[i] + 1;
             }
         }
-        System.out.println(occurence);
 
         return occurence;
     }
@@ -156,12 +155,3 @@ public class Deck {
     }
 
 }
-
-/*
- * 
- * for (int i = 0; i < 5 && this.Cards.size() >= 1; i++) {
- * int random = new Random().nextInt(Cards.size());
- * cards.ajout(this.Cards.get(random));
- * this.Cards.remove(random);
- * }
- */
