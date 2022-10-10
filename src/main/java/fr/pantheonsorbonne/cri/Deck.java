@@ -80,6 +80,9 @@ public class Deck {
                 occurence[i] = occurence[i]+1;
             }
         }
+        System.out.println(occurence);
+
+
         return occurence;
     }
 
