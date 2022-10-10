@@ -3,6 +3,8 @@ package fr.pantheonsorbonne.cri;
 
 public class App {
     public static void main(String[] args) {
+       
+       
         Deck deck = new Deck();
         deck.Initialisation52Cards();
         Player p = new Player("test");

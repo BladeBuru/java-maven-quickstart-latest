@@ -21,19 +21,19 @@ public class Card {
     }
 
     enum Value {
-        ACE,
-        KING,
-        QUEEN,
-        JACK,
-        TEN,
-        NINE,
-        EIGHT,
-        SEVEN,
-        SIX,
-        FIVE,
-        FOUR,
+        TWO,
         THREE,
-        TWO;
+        FOUR,
+        FIVE,
+        SIX,
+        SEVEN,
+        EIGHT,
+        NINE,
+        TEN,
+        JACK,
+        QUEEN,
+        KING,
+        ACE;
 
         private static Random rand = new Random();
 
@@ -61,6 +61,10 @@ public class Card {
     public boolean SameValue(Card card) {
 
         return (this.value == card.value);
+    }
+
+    public Value getValue(){
+        return value;
     }
 
     public String toString() {

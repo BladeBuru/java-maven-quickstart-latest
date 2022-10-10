@@ -8,7 +8,7 @@ public class ClosedPoker {
 
         // give the players some cards
         Deck deck = new Deck();
-        deck.Initialisation52Cards();
+        deck.Initialisation32Cards();
         p1.setHand(deck.newRandomHand());
         p2.setHand(deck.newRandomHand());
         p3.setHand(deck.newRandomHand());

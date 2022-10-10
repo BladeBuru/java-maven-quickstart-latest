@@ -16,6 +16,16 @@ public class DeckTest {
     }
 
     @Test
+    public void Initialisation32CardsTest() {
+        Deck deck = new Deck();
+        deck.Initialisation32Cards();
+        Player p1 = new Player("Nicolas");
+        assertEquals(32, deck.size());
+        p1.setHand(deck.newRandomHand());
+        assertNotEquals(52, deck.size());
+    }
+
+    @Test
     public void getRandomCardsTest() {
         Deck deck = new Deck();
         deck.Initialisation52Cards();
