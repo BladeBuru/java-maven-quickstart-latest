@@ -19,35 +19,35 @@ public class Deck {
     }
 
     public void Initialisation52Cards() {
-        ArrayList<Card> cards = new ArrayList<Card>();
+        ArrayList<Card> deck = new ArrayList<Card>();
         for (Card.Color color : Card.Color.class.getEnumConstants()) {
             for (Card.Value value : Card.Value.class.getEnumConstants()) {
-                cards.add(new Card(value, color));
+                deck.add(new Card(value, color));
             }
         }
-        this.cards = cards;
+        this.cards = deck;
     }
 
     public void Initialisation32Cards() {
-        ArrayList<Card> cards = new ArrayList<Card>();
+        ArrayList<Card> deck = new ArrayList<Card>();
         for (Card.Color color : Card.Color.class.getEnumConstants()) {
             for (Card.Value value : Card.Value.class.getEnumConstants()) {
                 if (value.ordinal() >= 5)
-                    cards.add(new Card(value, color));
+                    deck.add(new Card(value, color));
             }
         }
-        this.cards = cards;
+        this.cards = deck;
     }
 
     public Deck newRandomHand() {
-        Deck cards = new Deck();
+        Deck deck = new Deck();
         for (int i = 0; i < 5 && this.cards.size() >= 1; i++) {
             int nextIndex = random.nextInt(this.cards.size());
-            cards.ajout(this.cards.get(nextIndex));
+            deck.ajout(this.cards.get(nextIndex));
             this.cards.remove(nextIndex);
         }
 
-        return cards;
+        return deck;
     }
 
     public void ajout(Card card) {
@@ -70,13 +70,13 @@ public class Deck {
     }
 
     public Deck getRandomCards(int length) {
-        Deck cards = new Deck();
+        Deck deck = new Deck();
         for (int i = 0; i < length && this.cards.size() >= 1; i++) {
             int nextIndex = random.nextInt(this.cards.size());
-            cards.ajout(this.cards.get(nextIndex));
+            deck.ajout(this.cards.get(nextIndex));
             this.cards.remove(nextIndex);
         }
-        return cards;
+        return deck;
 
     }
 
