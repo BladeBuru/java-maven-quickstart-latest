@@ -18,7 +18,7 @@ public class Player {
     public boolean beats(Player player1) {
         int HandOccurenceJ0 = cards.occurenceMax();
         int HandOccurenceJ1 = player1.getDeck().occurenceMax();
-        return HandOccurenceJ0 > HandOccurenceJ1 ;
+        return HandOccurenceJ0 > HandOccurenceJ1 || (HandOccurenceJ0 == HandOccurenceJ1 && this.cards.cardToKeep().ordinal()> player1.getDeck().cardToKeep().ordinal()) ;
 
     }
 

@@ -108,7 +108,7 @@ public class Deck {
         return  occurencemax;
     }
 
-    private Card.Value cardToKeep() {
+    public Card.Value cardToKeep() {
         int[] occurence = occurenceTable();
         int indexOccurencemax = 0;
         int occurencemax = 0;
