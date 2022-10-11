@@ -8,9 +8,9 @@ public class Deck {
     private ArrayList<Card> cards;
     private Random random = new Random();
 
-    public Deck(ArrayList<Card> cards) {
+    public Deck(ArrayList<Card> deck) {
 
-        this.cards = cards;
+        this.cards = deck;
     }
 
     public Deck() {
