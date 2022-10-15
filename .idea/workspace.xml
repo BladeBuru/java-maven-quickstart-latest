@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2a83e67c-7aed-410b-ba38-e80352b8198e" name="Changes" comment="Correction de bug" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2GB1MuRoMjyzsaoPLlPliygum03" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/fabie/OneDrive/Documents/Travail/L3/Semestre1/ISI6-POO/Test/java-maven-quickstart-latest"
+  }
+}]]></component>
+  <component name="RunManager" selected="JUnit.AppTest and 4 more">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="fr.pantheonsorbonne.cri.App" />
+      <module name="artifactId" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fr.pantheonsorbonne.cri.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppTest and 4 more" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="artifactId" />
+      <option name="TEST_OBJECT" value="pattern" />
+      <patterns>
+        <pattern testClass="fr.pantheonsorbonne.cri.AppTest" />
+        <pattern testClass="fr.pantheonsorbonne.cri.CardTest" />
+        <pattern testClass="fr.pantheonsorbonne.cri.ClosedPockerTest" />
+        <pattern testClass="fr.pantheonsorbonne.cri.DeckTest" />
+        <pattern testClass="fr.pantheonsorbonne.cri.PlayerTest" />
+      </patterns>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClosedPockerTest.mainTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="artifactId" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fr.pantheonsorbonne.cri.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="fr.pantheonsorbonne.cri" />
+      <option name="MAIN_CLASS_NAME" value="fr.pantheonsorbonne.cri.ClosedPockerTest" />
+      <option name="METHOD_NAME" value="mainTest2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.AppTest and 4 more" />
+        <item itemvalue="JUnit.ClosedPockerTest.mainTest2" />
+        <item itemvalue="Application.App" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2a83e67c-7aed-410b-ba38-e80352b8198e" name="Changes" comment="" />
+      <created>1665847123278</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1665847123278</updated>
+      <workItem from="1665847127281" duration="782000" />
+    </task>
+    <task id="LOCAL-00001" summary="Correction de bug">
+      <created>1665847877948</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1665847877948</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Correction de bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correction de bug" />
+  </component>
+</project>
