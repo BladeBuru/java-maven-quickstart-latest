@@ -47,7 +47,7 @@ public class ClosedPoker {
             }
         }
 
-        else if (p3.beats(p1) && p3.beats(p3)) {
+        else if (p3.beats(p1) && p3.beats(p2)) {
             System.out.println("P3 wins with hand" + p2.getHandString());
             //Only for display
             {
